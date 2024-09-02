@@ -66,7 +66,7 @@ $wa->useStyle('template.joomstarter.user');
 $wa->useScript('template.joomstarter.scripts');
 
 // Conditionally load UIkit if enabled in the template parameters
-if ($this->params->get('uikit', 0)) {
+if ($this->params->get('uikit', 1)) {
     $wa->useStyle('template.uikit.css');
     $wa->useScript('template.uikit.js');
 }
