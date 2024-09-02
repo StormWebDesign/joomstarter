@@ -19,7 +19,7 @@
       "name": "bootstrap.css",
       "description": "Bootstrap CSS framework.",
       "type": "style",
-      "uri": "media/vendor/bootstrap/css/bootstrap.min.css"
+      "uri": "media/vendor/bootstrap/css/bootstrap.min.test.css"
     },
     {
       "name": "bootstrap.js",
