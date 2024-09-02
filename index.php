@@ -37,7 +37,8 @@ $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 
 //Get params from template styling
 //If you want to add your own parameters you may do so in templateDetails.xml
-$testparam =  $this->params->get('testparam');
+// $testparam =  $this->params->get('testparam');
+$uikit =  $this->params->get('uikit');
 
 //uncomment to see how this works on site... it just shows 1 or 0 depending on option selected in style config.
 //You can use this style to get/set any param according to instructions at https://kevinsguides.com/guides/webdev/joomla4/joomla-4-templates/adding-config
@@ -78,6 +79,8 @@ if ($this->params->get('uikit', 1)) {
 $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 
 ?>
+
+<?php echo 'UIKIT Setting is: ' . $uikit; ?>
 
 <?php // Everything below here is the actual "template" part of the template. Where we put our HTML code for the layout and such. ?>
 <!DOCTYPE html>
