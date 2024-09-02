@@ -15,13 +15,13 @@
       ]
     },
     {
-      "name": "bootstrap.css",
+      "name": "template.bootstrap.styles",
       "description": "Bootstrap CSS framework.",
       "type": "style",
-      "uri": "media/vendor/bootstrap/css/bootstrap.min.css"
+      "uri": "bootstrap.min.css"
     },
     {
-      "name": "bootstrap.js",
+      "name": "template.bootstrap.script",
       "description": "Bootstrap JS framework.",
       "type": "script",
       "uri": "media/vendor/bootstrap/js/bootstrap.bundle.min.js",
@@ -48,13 +48,13 @@
       ]
     },
     {
-      "name": "uikit.styles",
+      "name": "template.uikit.styles",
       "description": "UIkit CSS framework.",
       "type": "style",
       "uri": "media/vendor/uikit/css/uikit.min.css"
     },
     {
-      "name": "uikit.script",
+      "name": "template.uikit.script",
       "description": "UIkit JavaScript framework.",
       "type": "script",
       "uri": "media/vendor/uikit/js/uikit.min.js",

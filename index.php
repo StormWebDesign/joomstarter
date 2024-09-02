@@ -50,26 +50,26 @@ $templatePath = 'templates/' . $this->template;
 
 //load bootstrap collapse js (required for mobile menu to work)
 //this loads collapse.min.js from media/vendor/bootstrap/js - you can check out that folder to see what other bootstrap js files are available if you need them
-HTMLHelper::_('bootstrap.collapse');
+// HTMLHelper::_('bootstrap.collapse');
 //dropdown needed for 2nd level menu items
-HTMLHelper::_('bootstrap.dropdown');
+// HTMLHelper::_('bootstrap.dropdown');
 //You could also load all of bootstrap js with this line, but it's not recommended because it's a lot of extra code that you probably don't need
 //HTMLHelper::_('bootstrap.framework');
 
 
 // Register Bootstrap CSS and JS with the Web Asset Manager
-$wa->useStyle('bootstrap.css');
-$wa->useScript('bootstrap.js');
+$wa->useStyle('template.bootstrap.styles');
+$wa->useScript('template.bootstrap.script');
 
 // Register your template's CSS and JS
-$wa->useStyle('template.joomstarter.mainstyles');
+// $wa->useStyle('template.joomstarter.mainstyles');
 $wa->useStyle('template.joomstarter.user');
 $wa->useScript('template.joomstarter.scripts');
 
 // Conditionally load UIkit if enabled in the template parameters
 
-$wa->useStyle('uikit.styles');
-$wa->useScript('uikit.script');
+$wa->useStyle('template.uikit.styles');
+$wa->useScript('template.uikit.script');
 
 //Set viewport meta tag for mobile responsiveness -- very important for scaling on mobile devices
 $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
