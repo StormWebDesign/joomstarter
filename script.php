@@ -1,3 +1,6 @@
+
+
+
 <?php
 
 defined ( '_JEXEC' ) or die;
@@ -8,18 +11,29 @@ class joomstarterInstallerScript
 
     public function install($parent) 
     {
-        echo '<p> This is the install message called from the script.php file </p>';
+        // Access the manifest file
+        $manifest = $parent->get('manifest');
+        
+        // Get the version element from the manifest
+        $version = $manifest->version;
+        
+        echo '<p>The template has been installed with the latest version: ' . $version . '</p>';
     }
 
     public function uninstall($parent) 
     {
-        echo '<p>This is the uninstall message called from script.php</p>';
+        echo '<p>The template has been uninstalled.</p>';
     }
 
-    public function update($parent) 
+    public function update($parent)
     {
-        echo '<p>This is the update message called from script.php</p>';
-
+        // Access the manifest file
+        $manifest = $parent->get('manifest');
+        
+        // Get the version element from the manifest
+        $version = $manifest->version;
+        
+        echo '<p>The template has been updated to the latest version: ' . $version . '</p>';
     }
 
 
