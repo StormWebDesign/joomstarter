@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>joomstarter</name>
-	<version>2.0</version>
+	<version>2.0.1</version>
 	<creationDate>Oct 2023</creationDate>
 	<author>Russell English</author>
 	<authorEmail>russell.english@stormit.co.uk</authorEmail>
