@@ -56,11 +56,21 @@ HTMLHelper::_('bootstrap.dropdown');
 //HTMLHelper::_('bootstrap.framework');
 
 
-//Register our web assets (Css/JS) with the Web Asset Manager
-//The files are defined in joomla.asset.json!!! If you don't want to use the included CSS or JS, just remove these lines or replace the CSS/JS files with your own code!
+// Register Bootstrap CSS and JS with the Web Asset Manager
+$wa->useStyle('bootstrap.css');
+$wa->useScript('bootstrap.js');
+
+// Register your template's CSS and JS
 $wa->useStyle('template.joomstarter.mainstyles');
 $wa->useStyle('template.joomstarter.user');
 $wa->useScript('template.joomstarter.scripts');
+
+// Conditionally load UIkit if enabled in the template parameters
+if ($this->params->get('uikit', 0)) {
+    $wa->useStyle('template.uikit.css');
+    $wa->useScript('template.uikit.js');
+}
+
 
 //Set viewport meta tag for mobile responsiveness -- very important for scaling on mobile devices
 $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
