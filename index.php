@@ -55,8 +55,8 @@ HTMLHelper::_('bootstrap.dropdown');
 //You could also load all of bootstrap js with this line, but it's not recommended because it's a lot of extra code that you probably don't need
 //HTMLHelper::_('bootstrap.framework');
 
-$wa->useStyle('template.uikit.styles');
-$wa->useScript('template.uikit.script');
+$wa->useStyle('template.uikit.css');
+$wa->useScript('template.uikit.js');
 
 //Register our web assets (Css/JS) with the Web Asset Manager
 //The files are defined in joomla.asset.json!!! If you don't want to use the included CSS or JS, just remove these lines or replace the CSS/JS files with your own code!

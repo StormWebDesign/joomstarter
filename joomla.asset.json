@@ -15,13 +15,13 @@
       ]
     },
     {
-      "name": "template.uikit.styles",
+      "name": "template.uikit.css",
       "description": "UIkit CSS framework.",
       "type": "style",
       "uri": "uikit.min.css"
     },
     {
-      "name": "template.uikit.script",
+      "name": "template.uikit.js",
       "description": "UIkit JavaScript framework.",
       "type": "script",
       "uri": "uikit.min.js",
