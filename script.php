@@ -8,17 +8,17 @@ class joomstarterInstallerScript
 
     public function install($parent) 
     {
-        echo '<p>Good choice, the template has been installed.</p>';
+        echo '<p>Good choice, you\'ve installed a great template!</p>';
     }
 
     public function uninstall($parent) 
     {
-        echo '<p>I\'ve come to regard you as people that I, met.</p>';
+        echo '<p>I\'ve come to regard you as someone that I, met.</p>';
     }
 
     public function update($parent) 
     {
-        echo '<p>The template has been updated to the latest version.</p>';
+        echo '<p>Good work! You\'ve updated the template to the latest version!</p>';
 
     }
 

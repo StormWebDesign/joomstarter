@@ -5,6 +5,7 @@
   "description": "This file contains details of the assets used by joomstarter, a modified version of the default cassiopeia template.",
   "license": "GPL-2.0-or-later",
   "assets": [
+
     {
       "name": "template.joomstarter.mainstyles",
       "description": "The default css style to use.",
@@ -13,21 +14,6 @@
       "dependencies": [
         "fontawesome"
       ]
-    },
-    {
-      "name": "template.bootstrap.styles",
-      "description": "Bootstrap CSS framework.",
-      "type": "style",
-      "uri": "bootstrap.min.css"
-    },
-    {
-      "name": "template.bootstrap.script",
-      "description": "Bootstrap JS framework.",
-      "type": "script",
-      "uri": "media/vendor/bootstrap/js/bootstrap.bundle.min.js",
-      "attributes": {
-        "defer": true
-      }
     },
     {
       "name": "template.joomstarter.user",
@@ -39,28 +25,13 @@
       "name": "template.joomstarter.scripts",
       "description": "The file containing the javascript for this template.",
       "type": "script",
-      "uri": "template.min.js",
-      "attributes": {
+      "uri": "template.js",
+      "attributes" : {
         "defer": true
       },
       "dependencies": [
         "core"
       ]
-    },
-    {
-      "name": "template.uikit.styles",
-      "description": "UIkit CSS framework.",
-      "type": "style",
-      "uri": "media/vendor/uikit/css/uikit.min.css"
-    },
-    {
-      "name": "template.uikit.script",
-      "description": "UIkit JavaScript framework.",
-      "type": "script",
-      "uri": "media/vendor/uikit/js/uikit.min.js",
-      "attributes": {
-        "defer": true
-      }
     },
     {
       "name": "template.active",

@@ -37,8 +37,7 @@ $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 
 //Get params from template styling
 //If you want to add your own parameters you may do so in templateDetails.xml
-// $testparam =  $this->params->get('testparam');
-$uikit =  $this->params->get('uikit');
+$testparam =  $this->params->get('testparam');
 
 //uncomment to see how this works on site... it just shows 1 or 0 depending on option selected in style config.
 //You can use this style to get/set any param according to instructions at https://kevinsguides.com/guides/webdev/joomla4/joomla-4-templates/adding-config
@@ -50,33 +49,23 @@ $templatePath = 'templates/' . $this->template;
 
 //load bootstrap collapse js (required for mobile menu to work)
 //this loads collapse.min.js from media/vendor/bootstrap/js - you can check out that folder to see what other bootstrap js files are available if you need them
-// HTMLHelper::_('bootstrap.collapse');
+HTMLHelper::_('bootstrap.collapse');
 //dropdown needed for 2nd level menu items
-// HTMLHelper::_('bootstrap.dropdown');
+HTMLHelper::_('bootstrap.dropdown');
 //You could also load all of bootstrap js with this line, but it's not recommended because it's a lot of extra code that you probably don't need
 //HTMLHelper::_('bootstrap.framework');
 
 
-// Register Bootstrap CSS and JS with the Web Asset Manager
-$wa->useStyle('template.bootstrap.styles');
-$wa->useScript('template.bootstrap.script');
-
-// Register your template's CSS and JS
-// $wa->useStyle('template.joomstarter.mainstyles');
+//Register our web assets (Css/JS) with the Web Asset Manager
+//The files are defined in joomla.asset.json!!! If you don't want to use the included CSS or JS, just remove these lines or replace the CSS/JS files with your own code!
+$wa->useStyle('template.joomstarter.mainstyles');
 $wa->useStyle('template.joomstarter.user');
 $wa->useScript('template.joomstarter.scripts');
-
-// Conditionally load UIkit if enabled in the template parameters
-
-$wa->useStyle('template.uikit.styles');
-$wa->useScript('template.uikit.script');
 
 //Set viewport meta tag for mobile responsiveness -- very important for scaling on mobile devices
 $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 
 ?>
-
-
 
 <?php // Everything below here is the actual "template" part of the template. Where we put our HTML code for the layout and such. ?>
 <!DOCTYPE html>

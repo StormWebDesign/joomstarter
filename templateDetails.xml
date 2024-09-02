@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>joomstarter</name>
-	<version>2.0.1</version>
-	<creationDate>Sept 2024</creationDate>
+	<version>2.0</version>
+	<creationDate>Oct 2023</creationDate>
 	<author>Russell English</author>
 	<authorEmail>russell.english@stormit.co.uk</authorEmail>
-	<copyright>(C) 2024 Storm Web Design</copyright>
+	<copyright>(C) 2024 Storm</copyright>
 	<description>TPL_joomstarter_XML_DESCRIPTION</description>
 	<inheritable>1</inheritable>
 	<scriptfile>script.php</scriptfile>
@@ -18,7 +18,7 @@
 	<media destination="templates/site/joomstarter" folder="media">
 		<folder>js</folder>
 		<folder>css</folder>
-		<folder>scss</folder> 
+		<folder>scss</folder>
 		<folder>images</folder>
 	</media>
 	<positions>
@@ -37,14 +37,17 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="uikit" type="radio" label="TPL_JOOMSTARTER_UIKIT_LABEL" default="1" layout="joomla.form.field.radio.switcher" filter="boolean">
+				<field
+					name="testparam"
+					type="radio"
+					label="TPL_joomstarter_TEST_LABEL"
+					default="1"
+					layout="joomla.form.field.radio.switcher"
+					filter="boolean"
+					>
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<!-- <field name="testparam" type="radio" label="TPL_joomstarter_TEST_LABEL" default="1" layout="joomla.form.field.radio.switcher" filter="boolean">
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field> -->
 			</fieldset>
 		</fields>
 	</config>
