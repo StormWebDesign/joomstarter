@@ -69,8 +69,8 @@ $wa->useScript('template.joomstarter.scripts');
 // Conditionally load UIkit if enabled in the template parameters
 
 if ($uikit == '1') {
-    $wa->useStyle('template.uikit.css');
-    $wa->useScript('template.uikit.js');
+    $wa->useStyle('uikit.styles');
+    $wa->useScript('uikit.script');
 }
 
 //Set viewport meta tag for mobile responsiveness -- very important for scaling on mobile devices

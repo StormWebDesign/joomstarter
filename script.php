@@ -8,17 +8,17 @@ class joomstarterInstallerScript
 
     public function install($parent) 
     {
-        echo '<p> This is the install message called from the script.php file </p>';
+        echo '<p>Good choice, the template has been installed.</p>';
     }
 
     public function uninstall($parent) 
     {
-        echo '<p>This is the uninstall message called from script.php</p>';
+        echo '<p>I\'ve come to regard you as people that I, met.</p>';
     }
 
     public function update($parent) 
     {
-        echo '<p>This is the update message called from script.php</p>';
+        echo '<p>The template has been updated to the latest version.</p>';
 
     }
 
