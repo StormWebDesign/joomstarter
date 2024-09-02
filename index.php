@@ -80,7 +80,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 
 ?>
 
-<?php echo 'UIKIT Setting is: ' . $uikit; ?>
+
 
 <?php // Everything below here is the actual "template" part of the template. Where we put our HTML code for the layout and such. ?>
 <!DOCTYPE html>
@@ -104,6 +104,8 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
     ?>
     
 </head>
+
+<?php echo 'UIKIT Setting is: ' . $uikit; ?>
 
 <?php // you can change data-bs-theme to dark for dark mode  // ?>
 <body class="site <?php echo $pageclass; ?>" data-bs-theme="light">
