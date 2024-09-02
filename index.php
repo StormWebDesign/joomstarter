@@ -61,17 +61,16 @@ HTMLHelper::_('bootstrap.dropdown');
 $wa->useStyle('bootstrap.css');
 $wa->useScript('bootstrap.js');
 
-// Register your template's CSS and JS
-$wa->useStyle('template.joomstarter.mainstyles');
-$wa->useStyle('template.joomstarter.user');
-$wa->useScript('template.joomstarter.scripts');
-
 // Conditionally load UIkit if enabled in the template parameters
 
 if ($uikit == '1') {
     $wa->useStyle('template.uikit.css');
     $wa->useScript('template.uikit.js');
 }
+// Register your template's CSS and JS
+$wa->useStyle('template.joomstarter.mainstyles');
+$wa->useStyle('template.joomstarter.user');
+$wa->useScript('template.joomstarter.scripts');
 
 //Set viewport meta tag for mobile responsiveness -- very important for scaling on mobile devices
 $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
@@ -102,8 +101,6 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
     ?>
     
 </head>
-
-<?php echo 'UIKIT Setting is: ' . $uikit; ?>
 
 <?php // you can change data-bs-theme to dark for dark mode  // ?>
 <body class="site <?php echo $pageclass; ?>" data-bs-theme="light">
