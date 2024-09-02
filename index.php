@@ -64,8 +64,8 @@ $wa->useScript('bootstrap.js');
 
 // load UIkit if enabled in the template parameters
 
-$wa->useStyle('template.uikit.css');
-$wa->useScript('template.uikit.js');
+$wa->useStyle('uikit.styles');
+$wa->useScript('uikit.script');
 
 // Register your template's CSS and JS
 $wa->useStyle('template.joomstarter.mainstyles');
