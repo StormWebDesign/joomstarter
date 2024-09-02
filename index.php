@@ -77,8 +77,6 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 
 ?>
 
-
-
 <?php // Everything below here is the actual "template" part of the template. Where we put our HTML code for the layout and such. ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
