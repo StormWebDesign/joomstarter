@@ -38,6 +38,7 @@ $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 // Check which framework is selected and load accordingly
 $useUIKit = $templateParams->get('use_uikit', 0);
 $useBootstrap = $templateParams->get('use_bootstrap', 0);
+$useFontAwesome = $templateParams->get('use_fontawesome', 0);
 
 //Get params from template styling
 //If you want to add your own parameters you may do so in templateDetails.xml
@@ -69,6 +70,11 @@ if ($templateParams->get('use_uikit', 0)) {
 if ($templateParams->get('use_bootstrap', 0)) {
     $wa->useStyle('template.bootstrap.css');
     $wa->useScript('template.bootstrap.js');
+}
+
+// Load Bootstrap if enabled
+if ($templateParams->get('use_fontawesome', 0)) {
+    $wa->useScript('template.fontawesome.js');
 }
 
 //Register our web assets (Css/JS) with the Web Asset Manager

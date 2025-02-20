@@ -45,6 +45,16 @@
       }
     },
     {
+      "name": "template.fontawesome.js",
+      "description": "FontAwesome framework.",
+      "type": "script",
+      "uri": "//kit.fontawesome.com/22e15ab063.js",
+      "attributes": {
+        "defer": true,
+        "crossorigin": "anonymous"
+      }
+    },
+    {
       "name": "template.joomstarter.user",
       "description": "The custom CSS style to use. Must be placed in media/templates/site/joomstarter/css/user.css",
       "type": "style",

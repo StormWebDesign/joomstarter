@@ -56,6 +56,10 @@
             		<option value="0">No</option>
             		<option value="1">Yes</option>
         		</field>
+        		<field name="use_fontawesome" type="radio" label="Use FontAwesome" description="Enable or disable FontAwesome" default="0">
+            		<option value="0">No</option>
+            		<option value="1">Yes</option>
+        		</field>
 			</fieldset>
 		</fields>
 	</config>
