@@ -40,14 +40,6 @@ $useUIKit = $templateParams->get('use_uikit', 0);
 $useBootstrap = $templateParams->get('use_bootstrap', 0);
 $useFontAwesome = $templateParams->get('use_fontawesome', 0);
 
-//Get params from template styling
-//If you want to add your own parameters you may do so in templateDetails.xml
-$testparam =  $this->params->get('testparam');
-
-//uncomment to see how this works on site... it just shows 1 or 0 depending on option selected in style config.
-//You can use this style to get/set any param according to instructions at https://kevinsguides.com/guides/webdev/joomla4/joomla-4-templates/adding-config
-//echo('the value of testparam is: '.$testparam);
-
 // Get this template's path
 $templatePath = 'templates/' . $this->template;
 
