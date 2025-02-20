@@ -35,6 +35,10 @@ $sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
 $menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 
+// Check which framework is selected and load accordingly
+$useUIKit = $templateParams->get('use_uikit', 0);
+$useBootstrap = $templateParams->get('use_bootstrap', 0);
+
 //Get params from template styling
 //If you want to add your own parameters you may do so in templateDetails.xml
 $testparam =  $this->params->get('testparam');
@@ -55,8 +59,17 @@ HTMLHelper::_('bootstrap.dropdown');
 //You could also load all of bootstrap js with this line, but it's not recommended because it's a lot of extra code that you probably don't need
 //HTMLHelper::_('bootstrap.framework');
 
-$wa->useStyle('template.uikit.css');
-$wa->useScript('template.uikit.js');
+// Load UIKit if enabled
+if ($templateParams->get('use_uikit', 0)) {
+    $wa->useStyle('template.uikit.css');
+    $wa->useScript('template.uikit.js');
+}
+
+// Load Bootstrap if enabled
+if ($templateParams->get('use_bootstrap', 0)) {
+    $wa->useStyle('template.bootstrap.css');
+    $wa->useScript('template.bootstrap.js');
+}
 
 //Register our web assets (Css/JS) with the Web Asset Manager
 //The files are defined in joomla.asset.json!!! If you don't want to use the included CSS or JS, just remove these lines or replace the CSS/JS files with your own code!
