@@ -48,6 +48,14 @@
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
+        		<field name="use_uikit" type="radio" label="Use UIKit" description="Enable or disable UIKit" default="0">
+            		<option value="0">No</option>
+            		<option value="1">Yes</option>
+        		</field>
+        		<field name="use_bootstrap" type="radio" label="Use Bootstrap" description="Enable or disable Bootstrap" default="0">
+            		<option value="0">No</option>
+            		<option value="1">Yes</option>
+        		</field>
 			</fieldset>
 		</fields>
 	</config>
